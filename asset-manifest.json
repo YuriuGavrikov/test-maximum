@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-maximum/static/css/main.58da6f91.css",
+    "main.js": "/test-maximum/static/js/main.045f707b.js",
+    "index.html": "/test-maximum/index.html",
+    "main.58da6f91.css.map": "/test-maximum/static/css/main.58da6f91.css.map",
+    "main.045f707b.js.map": "/test-maximum/static/js/main.045f707b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58da6f91.css",
+    "static/js/main.045f707b.js"
+  ]
+}
