@@ -1,0 +1,147 @@
+.cardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	min-width: 404px;
+	max-width: 404px;
+	margin: 30px;
+	padding: 45px 26px 31px;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 6px 32px #0e2a6029;
+	border-radius: 8px;
+	box-sizing: border-box;
+	@media (max-width: 768px) {
+		padding: 26px;
+	}
+
+	&Title {
+		margin-bottom: 6px;
+		font: normal normal normal 18px/28px Roboto;
+		letter-spacing: 0px;
+		color: #303030;
+
+		&Year {
+			font: normal normal normal 14px/28px Roboto;
+			letter-spacing: 0px;
+			color: #22bf86;
+		}
+	}
+	&Vin {
+		font: normal normal normal 10px/13px Roboto;
+		letter-spacing: 1px;
+		color: #707b8c;
+	}
+	&Swiper {
+		margin: 19px 0 0 0;
+	}
+	&Option {
+		display: flex;
+		white-space: nowrap;
+		&Text {
+			font: normal normal normal 14px/14px Roboto;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		&Count {
+			font: normal normal normal 12px/14px Roboto;
+			letter-spacing: 1.2px;
+			color: #707b8c;
+		}
+	}
+	&ContainerInfo {
+		@media (max-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 10px;
+		}
+	}
+	&Info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+
+		@media (max-width: 768px) {
+			flex-wrap: nowrap;
+			flex-direction: column;
+		}
+
+		&Item {
+			margin: 10px 0;
+			flex-basis: 50%;
+
+			&:last-child:nth-child(2n + 1) {
+				width: 100%;
+			}
+			&Title {
+				font: normal normal normal 10px/20px Roboto;
+				letter-spacing: 1px;
+				color: #acb8bf;
+			}
+			&Description {
+				text-align: left;
+				font: normal normal normal 14px/14px Roboto;
+				letter-spacing: 0px;
+				color: #303030;
+				width: 100%;
+			}
+		}
+	}
+	&Footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: flex-end;
+			margin-top: 10px;
+			flex-basis: 50%;
+		}
+
+		&Price {
+			padding-top: 15px;
+			text-align: left;
+			font: normal normal normal 28px/28px Roboto;
+			letter-spacing: 0px;
+			color: #22bf86;
+
+			&OptionNum {
+				font: normal normal normal 14px/48px Roboto;
+				letter-spacing: 0px;
+				color: #22bf86;
+			}
+
+			span {
+				color: #303030;
+			}
+		}
+		&Btn {
+			width: 145px;
+			height: 48px;
+			background: transparent
+				linear-gradient(252deg, #38ef7d 0%, #11998e 100%) 0% 0% no-repeat
+				padding-box;
+			border-radius: 8px;
+			border: none;
+			text-align: center;
+			font: normal 10px/13px Roboto;
+			letter-spacing: 2px;
+			color: #ffffff;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.mobileNone {
+		display: none;
+	}
+}
+
+.Loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
